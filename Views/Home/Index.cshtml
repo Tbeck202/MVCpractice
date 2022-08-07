@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome. This is the index page</h1>
+    <p>Don't mind us. We're just practicing some MVC basics over here.</p>
+</div>
+
+<div class="row col-9 mx-auto justify-content-center">
+
+    <div class="col-3">
+        <a asp-controller="Pages" asp-action="PageOne" class="btn btn-primary">Page One</a>
+    </div>
+
+    <div class="col-3">
+        <a asp-controller="Pages" asp-action="PageTwo" class="btn btn-dark">Page Two!</a>
+    </div>
+
+    <div class="col-3">
+        <a asp-controller="Pages" asp-action="PageThree" class="btn btn-outline-primary">Page Three!</a>
+    </div>
+</div>

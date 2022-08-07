@@ -1,0 +1,49 @@
+﻿@model VisitorViewModel
+
+<div class="text-center">
+    <h1 class="display-4">This is Page Three</h1>
+    <p>
+        If you made it this far, you deserve some recognition. <br />
+        Add your info below to display proudly on this epic site.
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+
+            <div class="card-header">
+                <h2>Visitor info</h2>
+            </div>
+
+            <div class="card-body">
+                <form asp-controller="Pages" asp-action="CreateVisitor" method="post">
+
+                    <div class="mb-3">
+                        <label class="form-label">Enter your name</label>
+                        <input type="text" asp-for=Name class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Enter your age</label>
+                        <input type="text" asp-for=Age class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Any Comments?</label>
+                        <input type="text" asp-for=Comment class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card-footer">
+
+            </div>
+
+        </div>
+    </div>
+</div>
